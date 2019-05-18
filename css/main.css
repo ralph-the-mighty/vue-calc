@@ -1,0 +1,38 @@
+.calculator {
+  width: 182px;
+  background-color: #CCCCCC;
+  margin: 0 auto;
+}
+
+.row {
+  margin: 0 auto;
+  background-color: #CCCCCC;
+}
+
+
+.display {
+  height: 50px;
+  font-size: 30pt;
+  margin: 4px;
+  font-family: "consolas";
+  text-align: right;
+  border-bottom: 1px solid black;
+}
+
+
+.button {
+  background-color: #AAAAAA;
+  height: 50px;
+  width: 50px;
+  margin: 4px;
+  font-size: 30pt;
+  font-family: "consolas";
+  text-align: center;
+  display: inline-block;
+}
+
+.button:hover {
+  background-color: #DDDDDD;
+  cursor: pointer;
+}
+
