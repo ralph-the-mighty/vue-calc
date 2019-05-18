@@ -11,6 +11,7 @@ var app = new Vue({
       if(this.display.length < 8){
         this.display += number;
       }
+      console.log(this.display.length);
     },
 
     operate: function(operation) {
@@ -22,16 +23,16 @@ var app = new Vue({
     equals: function() {
       switch(this.operation) {
         case "+":
-          this.display = this.register + parseInt(this.display, 10);
+          this.display = (this.register + parseInt(this.display, 10)).toString(10);
         break;
         case "-":
-          this.display = this.register - parseInt(this.display, 10);
+          this.display = (this.register - parseInt(this.display, 10)).toString(10);
         break;
         case "*":
-          this.display = this.register * parseInt(this.display, 10);
+          this.display = (this.register * parseInt(this.display, 10)).toString(10);
         break;        
         case "/":
-          this.display = this.register / parseInt(this.display, 10);
+          this.display = (this.register / parseInt(this.display, 10)).toString(10);
         break;
         default:
           alert("default case reached");
